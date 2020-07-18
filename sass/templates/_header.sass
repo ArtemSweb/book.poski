@@ -1,0 +1,36 @@
+.header
+	&__menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 15px 0
+
+.logo
+	display: flex
+	align-items: center
+	text-decoration: none
+	color: $color-ff
+	transition: all ease .25s
+	&__text
+		margin-left: 9px
+		display: block
+		font-size: 15px
+		font-family: $second-ff
+		text-transform: uppercase
+		&--accent
+			display: block
+			font-size: 10px
+	&:hover
+		color: $main-color
+
+.nav
+	&__item
+		margin-right: 55px
+		font-family: $main-ff
+		font-size: 14px
+		text-transform: uppercase
+		text-decoration: none
+		color: $color-ff
+		font-weight: 500
+		&:last-child
+			margin-right: 0	
