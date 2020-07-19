@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -342,6 +343,21 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Impact';
+  src: url("../fonts/impact.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'myra_4f_caps_bold';
+  src: local("☺"), url("../fonts/myra_4f_caps_bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
   width: 95%;
   max-width: 1415px;
@@ -454,6 +470,6 @@ template {
 }
 
 .hero__title {
-  font-family: "Myra4FCaps", sans-serif;
+  font-family: "myra_4f_caps_bold", sans-serif;
   font-weight: 700;
 }
