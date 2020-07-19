@@ -452,3 +452,8 @@ template {
 .social__item:hover {
   color: #e94544;
 }
+
+.hero__title {
+  font-family: "Myra4FCaps", sans-serif;
+  font-weight: 700;
+}
