@@ -12,6 +12,7 @@
 	color: $color-ff
 	transition: all ease .25s
 	&__text
+		margin: 0
 		margin-left: 9px
 		display: block
 		font-size: 15px
@@ -24,7 +25,10 @@
 		color: $main-color
 
 .nav
+	display: flex
+	justify-content: space-between
 	&__item
+		position: relative
 		margin-right: 55px
 		font-family: $main-ff
 		font-size: 14px
@@ -32,5 +36,28 @@
 		text-decoration: none
 		color: $color-ff
 		font-weight: 500
+		transition: all .25s
 		&:last-child
 			margin-right: 0	
+		&::after
+			position: absolute
+			display: block
+			content: ''
+			height: 2px
+			width: 0
+			top: -15px
+			background-color: $main-color
+			transition: all .25s
+		&:hover
+			&::after
+				width: 100%
+
+.social
+	display: flex
+	&__item
+		margin-right: 15px
+		color: $color-ff
+		&:last-child
+			margin-right: 0
+		&:hover
+			color: $main-color	

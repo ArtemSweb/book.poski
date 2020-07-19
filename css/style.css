@@ -375,6 +375,7 @@ template {
 }
 
 .logo__text {
+  margin: 0;
   margin-left: 9px;
   display: block;
   font-size: 15px;
@@ -391,7 +392,17 @@ template {
   color: #e94544;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .nav__item {
+  position: relative;
   margin-right: 55px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -399,8 +410,45 @@ template {
   text-decoration: none;
   color: #343434;
   font-weight: 500;
+  -webkit-transition: all .25s;
+  transition: all .25s;
 }
 
 .nav__item:last-child {
   margin-right: 0;
+}
+
+.nav__item::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 2px;
+  width: 0;
+  top: -15px;
+  background-color: #e94544;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.nav__item:hover::after {
+  width: 100%;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item {
+  margin-right: 15px;
+  color: #343434;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__item:hover {
+  color: #e94544;
 }
