@@ -1,4 +1,34 @@
 .hero
+	background: $main-color url(../img/hero/bg.png) no-repeat center
+	&__content
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		padding: 200px 0
 	&__title
+		margin: 0
 		font-family: $accent-ff
 		font-weight: 700
+		font-size: 115px
+		letter-spacing: 5px
+		color: $light
+		user-select: none
+	&__subtitle
+		margin: 0
+		padding-top: 45px
+		font-size: 18px
+		font-family: $main-ff
+		letter-spacing: 2.5px
+		color: #fddada
+		opacity: 0.8
+		text-transform: uppercase
+		user-select: none
+	&__button
+		margin-top: 73px
+		font-size: 16px
+		font-family: $main-ff
+		text-transform: uppercase
+		color: $color-ff
+		text-decoration: none
