@@ -1,4 +1,5 @@
 .hero
+	position: relative
 	background: $main-color url(../img/hero/bg.png) no-repeat center
 	&__content
 		position: relative
@@ -32,3 +33,24 @@
 		text-transform: uppercase
 		color: $color-ff
 		text-decoration: none
+	&__scroll-down
+		padding-top: 23px
+		position: absolute
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		left: 0
+		bottom: 0
+		width: 100%
+		text-decoration: none
+		text-transform: uppercase
+		font-family: $main-ff
+		color: $color-ff
+		background: $light
+		&::after
+			padding-top: 14px
+			content: ''
+			background: url('../img/hero/scroll-down.png') no-repeat center
+			width: 30px
+			height: 30px			
