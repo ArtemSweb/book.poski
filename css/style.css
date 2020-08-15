@@ -369,6 +369,9 @@ template {
   padding: 16px 65px;
   border-radius: 30px;
   z-index: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .button::before {
@@ -394,6 +397,10 @@ template {
 
 .button_blue {
   background-color: #00f7ff;
+}
+
+.button_red {
+  background-color: #e94544;
 }
 
 .header__menu {
@@ -615,4 +622,64 @@ template {
   font-size: 36px;
   color: #e94544;
   text-transform: uppercase;
+}
+
+.about {
+  margin-top: 90px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  position: relative;
+  background: #e94544 url(../img/about/bg.jpg) no-repeat center/cover;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.about__content {
+  position: relative;
+  margin: 0 auto;
+  padding: 75px 0;
+  background-color: #ffffff;
+  max-width: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 54px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 54px rgba(0, 0, 0, 0.3);
+}
+
+.about__text {
+  margin-top: 80px;
+}
+
+.about__text-item {
+  margin: 0;
+  margin-bottom: 35px;
+  max-width: 390px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #7d7d7d;
+  line-height: 24px;
+}
+
+.about__button {
+  color: #ffffff;
 }
