@@ -683,3 +683,14 @@ template {
 .about__button {
   color: #ffffff;
 }
+
+.new__icon {
+  color: #343434;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  stroke: #e94544;
+}
+
+.new__icon:hover, .new__icon:active {
+  color: #e94544;
+}
