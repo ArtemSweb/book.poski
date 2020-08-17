@@ -1,7 +1,29 @@
 .new
+	padding-top: 100px
+	padding-bottom: 100px
+	&__title
+		text-align: center
+	&__slider
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__card
+		padding: 33px
+		border: 18px solid $main-color
+		flex-basis: 42%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&-left
+			flex-basis: 40%
+		&-right
+			flex-basis: 50%
+		&-buy
+			display: flex
+			justify-content: space-between	
 	&__icon
 		color: $color-ff
 		transition: all ease .25s
 		stroke: $main-color
 		&:hover, &:active
-			color: $main-color
+			color: $main-color		
