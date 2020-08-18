@@ -832,6 +832,7 @@ template {
   transition: all ease .25s;
   stroke: #e94544;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .new__icon:last-child {
