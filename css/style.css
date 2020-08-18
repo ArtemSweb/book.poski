@@ -726,6 +726,7 @@ template {
 }
 
 .new__card {
+  max-width: 611px;
   padding: 33px;
   border: 18px solid #e94544;
   -ms-flex-preferred-size: 42%;
@@ -757,6 +758,72 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new__card-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #343434;
+}
+
+.new__card-image {
+  max-width: 100%;
+  margin-top: 40px;
+  margin-bottom: -108px;
+}
+
+.new__card-title {
+  margin: 0;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  color: #343434;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.new__card-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #6e6e6e;
+  font-weight: 400;
+}
+
+.new__card-genre {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #6e6e6e;
+  font-weight: 400;
+}
+
+.new__card-genre-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #343434;
+  letter-spacing: 1.5px;
+}
+
+.new__card-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #6e6e6e;
+  font-weight: 400;
+  line-height: 22px;
+  word-spacing: 5px;
+}
+
+.new__card-description-ant {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #343434;
+  letter-spacing: 1.5px;
 }
 
 .new__icon {
@@ -764,6 +831,11 @@ template {
   -webkit-transition: all ease .25s;
   transition: all ease .25s;
   stroke: #e94544;
+  margin-right: 15px;
+}
+
+.new__icon:last-child {
+  margin-right: 0;
 }
 
 .new__icon:hover, .new__icon:active {
@@ -771,7 +843,7 @@ template {
 }
 
 .new__button {
-  padding: 15px;
+  padding: 15px 30px;
   border: 2px solid #5d5d5d;
   border-radius: 25px;
   background: transparent;

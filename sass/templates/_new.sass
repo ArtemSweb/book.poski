@@ -18,6 +18,7 @@
 		justify-content: space-between
 		padding-bottom: 190px
 	&__card
+		max-width: 611px
 		padding: 33px
 		border: 18px solid $main-color
 		flex-basis: 42%
@@ -30,15 +31,66 @@
 			flex-basis: 50%
 		&-buy
 			display: flex
-			justify-content: space-between	
+			justify-content: space-between
+			align-items: center
+		&-price
+			font-family: $main-ff
+			font-size: 30px
+			font-weight: 700
+			color: $color-ff
+		&-image
+			max-width: 100%
+			margin-top: 40px
+			margin-bottom: -108px
+		&-title
+			margin: 0
+			margin-bottom: 16px
+			text-transform: uppercase
+			font-family: $main-ff
+			font-size: 26px
+			color: $color-ff
+			font-weight: 700
+			letter-spacing: 2.5px
+		&-subtitle
+			font-family: $main-ff
+			font-size: 15px
+			color: #6e6e6e
+			font-weight: 400
+		&-genre
+			font-family: $main-ff
+			font-size: 16px
+			color: #6e6e6e
+			font-weight: 400
+			&-name
+				font-family: $main-ff
+				font-size: 18px
+				font-weight: 700
+				color: $color-ff
+				letter-spacing: 1.5px
+		&-description
+			font-family: $main-ff
+			font-size: 16px
+			color: #6e6e6e
+			font-weight: 400
+			line-height: 22px
+			word-spacing: 5px
+			&-ant
+				font-family: $main-ff
+				font-size: 18px
+				font-weight: 700
+				color: $color-ff
+				letter-spacing: 1.5px	
 	&__icon
 		color: $color-ff
 		transition: all ease .25s
 		stroke: $main-color
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
 		&:hover, &:active
 			color: $main-color
 	&__button
-		padding: 15px
+		padding: 15px 30px
 		border: 2px solid #5d5d5d
 		border-radius: 25px
 		background: transparent
