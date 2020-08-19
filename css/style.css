@@ -945,3 +945,38 @@ html {
   color: #5c5c5c;
   font-size: 16px;
 }
+
+.footer__connect-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 28px 0;
+}
+
+.footer__connect-phone, .footer__connect-mail {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #353535;
+  text-decoration: none;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+.footer__connect-phone:hover, .footer__connect-mail:hover {
+  color: #e94544;
+}
+
+.footer__connect-copyright {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.fa-phone-alt {
+  margin-right: 10px;
+}
