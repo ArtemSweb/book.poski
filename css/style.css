@@ -977,6 +977,36 @@ html {
   font-size: 14px;
 }
 
+.footer__about {
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 18px solid #121212;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__about-title {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #121212;
+}
+
+.footer__about-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #848484;
+  letter-spacing: .25px;
+}
+
 .fa-phone-alt {
   margin-right: 10px;
 }
