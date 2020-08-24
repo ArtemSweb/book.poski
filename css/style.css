@@ -639,7 +639,18 @@ html {
 }
 
 .catalog__card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 210px;
+}
+
+.catalog__card-content {
+  border: 18px solid #e94544;
+}
+
+.catalog__card-image {
+  max-width: 130px;
+  height: 187px;
 }
 
 .about {
