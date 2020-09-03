@@ -636,6 +636,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .catalog__card {
@@ -646,11 +647,41 @@ html {
 
 .catalog__card-content {
   border: 18px solid #e94544;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .catalog__card-image {
   max-width: 130px;
   height: 187px;
+  margin-bottom: -50px;
+  -webkit-box-shadow: 5px 5px 5px rgba(18, 18, 18, 0.3);
+          box-shadow: 5px 5px 5px rgba(18, 18, 18, 0.3);
+}
+
+.catalog__card-price {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #343434;
+  margin-top: 60px;
+}
+
+.catalog__button {
+  margin-top: 100px;
+  color: #343434;
 }
 
 .about {
